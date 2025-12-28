@@ -18,8 +18,218 @@
 
   /* ===== Typography ===== */
   --font-family-base: 'Barlow Semi Condensed', sans-serif;
-  --font-size-body: 13px;
+  --font-size-sm: 1.3rem;
+  --font-size-md: 1.5rem;
+  --font-size-lg: 1.8rem;
+
 
   --font-weight-medium: 500;
   --font-weight-semi-bold: 600;
+}
+
+/* ===== GLOBAL STYLE ===== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family-base);
+  background-color: var(--grey-100);
+}
+
+p, blockquote {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  
+}
+
+h2 {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+img {
+  width: 32px;
+  border-radius: 50%;
+  border: 2px solid;
+  margin-right: 1.8rem;
+}
+
+/* ===== COMPONENT ===== */
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 6rem 2.8rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+.box {
+  padding: 2.4rem;
+  border-radius: 8px;
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.review {
+  font-size: var(--font-size-lg);
+  margin-bottom: 1.4rem;
+}
+
+/* ==== BOX-1 ==== */
+
+.box-1 {
+  background: right top no-repeat url("/images/bg-pattern-quotation.svg");
+  background-color: var(--purple-500);
+  color: var(--purple-300);
+}
+
+.box-1 .name {
+  color: var(--purple-50);
+}
+
+.box-1 .review {
+  color: var(--grey-100);
+}
+
+/* ==== BOX-1 ==== */
+
+.box-2 {
+  background-color: var(--grey-500);
+  color: var(--grey-200);
+}
+
+.box-2 .profile-img {
+  border-color: var(--grey-400);
+}
+
+.box-2 .name {
+  color: var(--grey-100);
+}
+
+.box-2 .review {
+  color: var(--white);
+}
+
+/* ==== BOX-1 ==== */
+
+.box-3 {
+  background-color: var(--white);
+  color: var(--grey-400);
+}
+
+.box-3 .profile-img {
+  border-color: var(--grey-100);
+}
+
+.box-3 .name {
+  color: var(--grey-500);
+}
+
+.box-3 .review {
+  color: var(--dark-blue);
+}
+
+/* ==== BOX-1 ==== */
+
+.box-4 {
+  background-color: var(--dark-blue);
+  color: var(--grey-200);
+}
+
+.box-4 .profile-img {
+  border-color: var(--purple-500);
+}
+
+.box-4 .name {
+  color: var(--grey-100);
+}
+
+.box-4 .review {
+  color: var(--white);
+}
+
+/* ==== BOX-1 ==== */
+
+.box-5 {
+  background-color: var(--white);
+  color: var(--grey-500);
+}
+
+.box-5 .profile-img {
+  border-color: var(--white);
+}
+
+.box-5 .name {
+  color: var(--dark-blue);
+}
+
+.box-5 .review {
+  color: var(--dark-blue);
+}
+
+@media (min-width: 40.75rem) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .box-1  {
+    grid-column: 1/span 2;
+  }
+
+  .box-4 {
+    grid-row: 2/span 2;
+  }
+
+  .box-5 {
+    grid-row: 3/span 2;
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 57.5rem) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    padding: 0;
+  }
+
+  .box-1 {
+    grid-column: 1/span 2;
+  }
+
+  .box-4 {
+    grid-column: 2/span 2;
+    grid-row: 2;
+  }
+  
+  .box-5 {
+    grid-column: 4;
+    grid-row: 1/span 2;
+  }
+
+
+
+
 }

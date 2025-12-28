@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [You wanna see my solution](https://your-solution-url.com)
+- Live Site URL: [My site is here 🙋‍♂️](https://aiy7788.github.io/testimonials-grid-section/)
 
 ## My process
 

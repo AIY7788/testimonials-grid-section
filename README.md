@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [You wanna see my solution](https://your-solution-url.com)
+- Solution URL: [You wanna see my solution](https://www.frontendmentor.io/solutions/testimonials-grid-section-MzrN6qYzj1)
 - Live Site URL: [My site is here 🙋‍♂️](https://aiy7788.github.io/testimonials-grid-section/)
 
 ## My process
